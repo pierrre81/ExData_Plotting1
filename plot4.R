@@ -15,7 +15,7 @@ png(filename="plot4.png")
 par(mfrow = c(2,2))
 with(data, {
   plot(DateTime, Global_active_power, xlab = "", ylab = "Global Active Power", type = "l")
-  plot(DateTime, Global_active_power, xlab = "datetime", ylab = "Voltage", type = "l")
+  plot(DateTime, Voltage, xlab = "datetime", ylab = "Voltage", type = "l")
   plot(DateTime, Sub_metering_1,  xlab= "", ylab = "Energy sub meeting", type = "l")
   lines(DateTime, Sub_metering_2,  col = "red")
   lines(DateTime, Sub_metering_3,  col = "blue")
